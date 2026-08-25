@@ -1,0 +1,76 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # The same image the Makefile documents for local builds, so a green CI run
+    # means the assignment also builds on a contributor's machine.
+    container:
+      image: texlive/texlive:latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # minted shells out to pygmentize for syntax highlighting.
+      - name: Install Pygments
+        run: |
+          if ! command -v pygmentize >/dev/null; then
+            apt-get update -qq && apt-get install -y --no-install-recommends python3-pygments
+          fi
+          pygmentize -V
+
+      - name: Build assignments
+        run: make
+
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v7
+        with:
+          name: assignments
+          path: build/*.pdf
+          if-no-files-found: error
+
+      - name: Upload build logs
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: build-logs
+          path: build/*.log
+          if-no-files-found: ignore
+
+  publish:
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Download PDFs
+        uses: actions/download-artifact@v7
+        with:
+          name: assignments
+          path: build
+
+      # A rolling "latest" release so students can download the PDFs
+      # without installing a TeX toolchain.
+      - name: Publish to the latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view latest >/dev/null 2>&1; then
+            gh release create latest \
+              --title "Latest assignments" \
+              --notes "PDFs built from the latest commit on \`main\`." \
+              build/*.pdf
+          else
+            gh release upload latest build/*.pdf --clobber
+          fi
