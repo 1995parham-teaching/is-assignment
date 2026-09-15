@@ -15,6 +15,14 @@ Both are **seed material**: written from the lecture topics to give the
 repository a starting point, not handed out to a class yet. Read one before you
 set it — in particular the deadline, which no assignment sets.
 
+## Teaching assistants
+
+**Fall 2026 (پاییز ۱۴۰۵)**
+
+- Amirhossein Motaghian
+- Mehrdad Sheikhabbasi
+- Roza Ganjipour
+
 ## Reading the assignments
 
 Built PDFs for the current `main` are attached to the
