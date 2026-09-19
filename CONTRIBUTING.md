@@ -1,8 +1,6 @@
 # Contributing
 
-This repository holds the assignments and projects of the **Internet Engineering**
-course. Teaching assistants author assignments here; students receive the built
-PDFs. Please read this document before your first assignment.
+This repository holds the assignments and projects of the **Introduction to Information Security** course. Teaching assistants author assignments here; students receive the built PDFs. Please read this document before your first assignment, and [PLAN.md](PLAN.md) for what the team is working on this term.
 
 ## Prerequisites
 
@@ -29,14 +27,12 @@ make list       # what is in the repository
 make clean      # remove build artefacts
 ```
 
-Each assignment is written to `build/<assignment-name>.pdf`. `latexmk` runs from
-`src/`, which is why assignments refer to the class as `../assignment` and the
-class refers to the fonts as `../fonts/`. Keep those paths as they are.
+Each assignment is written to `build/<assignment-name>.pdf`. `latexmk` runs from `src/`, which is why assignments refer to the class as `../is-assignment` and the class refers to the fonts as `../fonts/`. Keep those paths as they are.
 
 To build a single assignment while you iterate:
 
 ```bash
-make build/http.pdf
+make build/crypto-toolbox.pdf
 ```
 
 CI runs `make` on every pull request in the TeX Live container, and publishes
