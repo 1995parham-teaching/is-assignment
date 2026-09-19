@@ -19,9 +19,11 @@ set it — in particular the deadline, which no assignment sets.
 
 **Fall 2026 (پاییز ۱۴۰۵)**
 
-- Amirhossein Motaghian
-- Mehrdad Sheikhabbasi
-- Roza Ganjipour
+- Amirhossein Motaghian ([@amirhossein2831](https://github.com/amirhossein2831))
+- Mehrdad Sheikhabbasi ([@MHRSHAB66](https://github.com/MHRSHAB66))
+- Roza Ganjipour ([@Rozagp](https://github.com/Rozagp))
+
+What the team is working on this term, and the state each assignment is in, is in [PLAN.md](PLAN.md).
 
 ## Reading the assignments
 
