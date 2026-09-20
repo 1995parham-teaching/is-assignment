@@ -4,13 +4,15 @@ What the assistant team is expected to produce this term, and what state each as
 
 ## Team
 
-| Assistant | GitHub | Joined |
-| --- | --- | --- |
-| Amirhossein Motaghian | [@amirhossein2831](https://github.com/amirhossein2831) | Fall 2026 |
-| Mehrdad Sheikhabbasi | [@MHRSHAB66](https://github.com/MHRSHAB66) | Fall 2026 |
-| Roza Ganjipour | [@Rozagp](https://github.com/Rozagp) | Fall 2026 |
+| Assistant | GitHub | Role | Joined |
+| --- | --- | --- | --- |
+| Roza Ganjipour | [@Rozagp](https://github.com/Rozagp) | Coordinator | Fall 2026 |
+| Amirhossein Motaghian | [@amirhossein2831](https://github.com/amirhossein2831) | Assistant | Fall 2026 |
+| Mehrdad Sheikhabbasi | [@MHRSHAB66](https://github.com/MHRSHAB66) | Assistant | Fall 2026 |
 
-Amirhossein also assists on [ie-assignments](https://github.com/1995parham-teaching/ie-assignments).
+Amirhossein also assists on [ie-assignments](https://github.com/1995parham-teaching/ie-assignments), where he is the coordinator, which makes him the link between the two courses.
+
+**The coordinator is the team's point of contact**, not a second instructor. They watch the open issues, chase an assignment that has been sitting, and bring a decision to the instructor rather than waiting for it to be noticed. Review and merge stay with the instructor, and so does anything that changes what a student is asked to do.
 
 ## What is in the repository
 
