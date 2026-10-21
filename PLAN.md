@@ -16,11 +16,11 @@ Amirhossein also assists on [ie-assignments](https://github.com/1995parham-teach
 
 ## What is in the repository
 
-Homework and hands-on work together are 30% of the course mark, and the syllabus deck is explicit that the hands-on work is where the material lands. Both assignments below are **seed material**: written from the lecture topics to give the repository a starting point, never handed to a class. Read one before you set it.
+Homework and hands-on work together are 30% of the course mark, and the syllabus deck is explicit that the hands-on work is where the material lands. Both assignments below started as **seed material**: written from the lecture topics to give the repository a starting point, never handed to a class. `crypto-toolbox` has since been reviewed and is ready to hand out; read `web-hardening` before you set it.
 
 | Assignment | Follows lecture | State | Proposed owner |
 | --- | --- | --- | --- |
-| [`crypto-toolbox`](src/crypto-toolbox) | 3 — Cryptography | Seed, needs review and a deadline | Mehrdad Sheikhabbasi |
+| [`crypto-toolbox`](src/crypto-toolbox) | 3 — Cryptography | Ready, reviewed in #7; deadline Friday `۲۲ آبان ۱۴۰۵` | Mehrdad Sheikhabbasi |
 | [`web-hardening`](src/web-hardening) | 6 — Web Security | Seed, needs review and a deadline | Roza Ganjipour |
 
 Owners are a proposal from the instructor, not an assignment of blame — swap them between yourselves if the split suits you better, and say so on the issue.
@@ -29,8 +29,8 @@ Owners are a proposal from the instructor, not an assignment of blame — swap t
 
 Both assignments already carry the right term (`پاییز ۱۴۰۵`) and both close with `\قوانین`. What they lack:
 
-- **Neither sets `\مهلت`**, so no cover page states a deadline. The instructor sets the dates; the owner puts them in the source.
-- **Neither has been read as a handout.** Seed text written from a lecture topic is not the same as an assignment a class can do in the time available. Check that the tasks are doable, that the marks in `\نمره` add up the way you want, and that the hints say enough.
+- **`web-hardening` does not set `\مهلت`**, so its cover page states no deadline. The instructor sets the dates; the owner puts them in the source.
+- **`web-hardening` has not been read as a handout.** Seed text written from a lecture topic is not the same as an assignment a class can do in the time available. Check that the tasks are doable, that the marks in `\نمره` add up the way you want, and that the hints say enough.
 
 ## Gaps
 

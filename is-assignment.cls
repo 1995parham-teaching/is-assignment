@@ -152,7 +152,7 @@
       \ifx\ie@deadline\@empty\else
         \vspace{0.9cm}
         \setlength{\fboxsep}{6pt}%
-        \colorbox{tbaccentsoft}{\color{tbaccent}\textbf{\strut مهلت تحویل: \ie@deadline}}%
+        \colorbox{tbaccentsoft}{\textcolor{tbaccent}{\textbf{\strut مهلت تحویل: \ie@deadline}}}%
       \fi
 
       \vfill
