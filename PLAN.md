@@ -20,7 +20,7 @@ Homework and hands-on work together are 30% of the course mark, and the syllabus
 
 | Assignment | Follows lecture | State | Proposed owner |
 | --- | --- | --- | --- |
-| [`crypto-toolbox`](src/crypto-toolbox) | 3 — Cryptography | Ready, reviewed in #7; deadline Friday `۲۲ آبان ۱۴۰۵` | Mehrdad Sheikhabbasi |
+| [`crypto-toolbox`](src/crypto-toolbox) | 3 — Cryptography | Ready, reviewed in #7; deadline Sunday `۲۴ آبان ۱۴۰۵` | Mehrdad Sheikhabbasi |
 | [`web-hardening`](src/web-hardening) | 6 — Web Security | Seed, needs review and a deadline | Roza Ganjipour |
 
 Owners are a proposal from the instructor, not an assignment of blame — swap them between yourselves if the split suits you better, and say so on the issue.
